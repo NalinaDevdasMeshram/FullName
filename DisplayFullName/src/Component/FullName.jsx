@@ -7,6 +7,8 @@ import { useState } from "react";
    const handleSubmit =(e)=>{
        e.preventDefault();
         setFullname (`${firstname} ${lastname}`);
+        setFirstname(''); // clearing the firstname
+        setLastname('');// clearing the lastname
     }
     return (
         <div>
