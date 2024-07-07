@@ -3,11 +3,12 @@ const FullName = ()=>{
     const [firstname, setFirstname] = useState('');
     const [lastname, setLastname]  = useState('');
     const [fullname, setFullname] = useState('')
-   const handleSubmit =()=>{
+   const handleSubmit =(e)=>{
       setFullname (`${firstname} ${lastname}`);
+      e.preventDefault();
         setFirstname(''); // clearing the firstname
         setLastname('');// clearing the lastname
-        // e.preventDefault();
+        //  e.preventDefault();
     }
     return (
         <div>
