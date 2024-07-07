@@ -9,10 +9,11 @@ const FullName = ()=>{
           });
     }
    const handleSubmit =(e)=>{
+       e.preventDefault();
       setFullname (`${formData.firstname} ${formData.lastname}`);
     //   e.preventDefault();
         setFormData({firstname:'', lastname:''})
-        e.preventDefault();
+        
     }
     return (
         <div>
@@ -28,8 +29,9 @@ const FullName = ()=>{
             </div>
             <button type="submit"> Submit </button>
         </form>
-        {fullname && <p>Full Name: {fullname}</p>}
+        {fullname && <p>Full Name: {fullname} </p>}
         </div>
+        
     )
  }
  export default FullName
