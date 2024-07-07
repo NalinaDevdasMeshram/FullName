@@ -11,7 +11,7 @@ const FullName = ()=>{
    const handleSubmit =(e)=>{
        e.preventDefault();
       setFullname (`${formData.firstname} ${formData.lastname}`);
-    //   e.preventDefault();
+     // after submit the form reload the feild 
         // setFormData({firstname:'', lastname:''})
         
     }
