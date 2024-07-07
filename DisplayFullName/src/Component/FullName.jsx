@@ -12,7 +12,7 @@ const FullName = ()=>{
        e.preventDefault();
       setFullname (`${formData.firstname} ${formData.lastname}`);
     //   e.preventDefault();
-        setFormData({firstname:'', lastname:''})
+        // setFormData({firstname:'', lastname:''})
         
     }
     return (
